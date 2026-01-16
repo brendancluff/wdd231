@@ -12,7 +12,7 @@ const creditSpan = document.getElementById("totalCredits");
 function displayCourses(courseList) {
   courseContainer.innerHTML = "";
 
-  const totalCredits = courseList.reduce((sum, c) => sum + c.credits, 0);
+  const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
   creditSpan.textContent = totalCredits;
 
   courseList.forEach(course => {
@@ -23,15 +23,18 @@ function displayCourses(courseList) {
   });
 }
 
+// Initial display
 displayCourses(courses);
 
-document.querySelectorAll(".filter-buttons button").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const filter = btn.dataset.filter;
+// Filter buttons
+document.querySelectorAll(".course-filters button").forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
     if (filter === "all") {
       displayCourses(courses);
     } else {
-      displayCourses(courses.filter(c => c.code.startsWith(filter)));
+      displayCourses(courses.filter(course => course.code.startsWith(filter)));
     }
   });
 });

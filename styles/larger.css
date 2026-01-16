@@ -33,11 +33,6 @@
     border: none;
   }
 
-  .main-nav a {
-    color: white;
-    text-decoration: none;
-  }
-
   /* ---------- MAIN LAYOUT ---------- */
   main {
     max-width: 1200px;
@@ -98,4 +93,13 @@
     background: #c7f0c2;
     font-weight: 600;
   }
+}
+
+/* ---------- ACCESSIBILITY FIX ---------- */
+.main-nav a {
+  color: #fff;
+}
+
+.main-nav li.active a {
+  color: #fff;
 }

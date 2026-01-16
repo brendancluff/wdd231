@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD231 Home Page - Web Frontend Development Student Portfolio">
+  <meta name="author" content="Brendan Cluff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD231 | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="header-top">
+    <img src="images/logo.svg" alt="Site Logo" class="logo">
+    <span class="site-name">Site Name</span>
+  </div>
+
+  <nav class="main-nav">
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main class="home-layout">
+  <h1>Home</h1>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I enjoy programming and building projects that challenge me to learn new skills and solve problems creatively. Outside of coding, I enjoy spending time with my family and friends and making meaningful memories together. I also love going on adventures, whether that means exploring new places, trying new activities, or simply getting outside and experiencing something new.
+</p>
+  </section>
+
+  <section class="photo">
+    <h2>Student Photo</h2>
+    <img src="images/profile.webp" alt="Student Photo">
+  </section>
+
+  <section class="courses">
+    <h2>Web Certificate Courses</h2>
+
+    <div class="course-filters">
+      <button data-filter="all">All</button>
+      <button data-filter="CSE">CSE</button>
+      <button data-filter="WDD">WDD</button>
+    </div>
+
+    <div id="courses" class="course-list"></div>
+
+    <p class="credits">
+      The total credits for courses listed above is
+      <span id="totalCredits"></span>
+    </p>
+  </section>
+</main>
+
+
+<footer>
+  <div class="social">
+    <a href="https://github.com/yourusername" aria-label="GitHub">GitHub</a>
+    <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn">LinkedIn</a>
+  </div>
+
+  <p>
+    &copy; <span id="currentyear"></span> Your Name | Arizona, USA
+  </p>
+
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>

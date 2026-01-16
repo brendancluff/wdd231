@@ -1,0 +1,166 @@
+/* ========== MOBILE FIRST (SMALL SCREENS) ========== */
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background: #fff;
+  border-bottom: 2px solid #222;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.logo {
+  width: 40px;
+}
+
+.site-name {
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+#menuButton {
+  background: #ddd;
+  border: 1px solid #aaa;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* ---------- NAV ---------- */
+
+.main-nav {
+  display: none;
+}
+
+.main-nav.open {
+  display: block;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  background: #333;
+  border-bottom: 1px solid #555;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav .active a {
+  background: #555;
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* ---------- CONTENT CARDS ---------- */
+
+section {
+  margin-bottom: 1.25rem;
+}
+
+section h2 {
+  background: #222;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.about p {
+  background: #e5e5e5;
+  padding: 0.75rem;
+  margin: 0;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 0.75rem auto;
+  background: #bbb;
+}
+
+/* ---------- COURSES ---------- */
+
+.courses {
+  text-align: center;
+}
+
+.course-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.course-filters button {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #888;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.course-list {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.course {
+  background: #ccc;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+
+.course.completed {
+  background: #b6e7b0;
+  font-weight: 600;
+}
+
+.credits {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background: #eee;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social a {
+  margin: 0 0.4rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}

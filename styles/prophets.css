@@ -1,0 +1,71 @@
+
+/* Page basics */
+body {
+  font-family: system-ui, Roboto, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.4;
+}
+
+header, footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0.25rem 0;
+  text-align: center;
+}
+
+h2 {
+  margin: 1rem 0 0.5rem;
+  text-shadow: 0 0 30px #111;
+}
+
+p {
+  margin: 0;
+}
+
+/* ✅ Same function as the sample: CSS Grid */
+#cards {
+  display: grid;
+  grid-gap: 1rem; 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: stretch;
+}
+
+/* Card styling — similar to sample: flex column */
+#cards section {
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #eee;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* DOB / POB paragraphs */
+#cards section > p {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Image styling  */
+#cards img {
+  width: auto;
+  max-width: 325px;
+  height: 200px;         
+  object-fit: cover;     
+  box-shadow: 0 0 30px #777;
+  border: 1px solid #111;
+  border-radius: 10px;
+  margin-top: 0.75rem;
+}

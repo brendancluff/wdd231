@@ -1,0 +1,28 @@
+{
+  "familyName": "Cluff",
+  "moveInDate": "2024-08-15",
+  "numberOfPeople": 4,
+  "visitedByBishopric": true,
+  "familyMembers": [
+    {
+      "name": "Brendan Cluff",
+      "gender": "Male",
+      "birthdate": "2001-03-22"
+    },
+    {
+      "name": "Sarah Cluff",
+      "gender": "Female",
+      "birthdate": "2002-11-09"
+    },
+    {
+      "name": "Ethan Cluff",
+      "gender": "Male",
+      "birthdate": "2012-06-14"
+    },
+    {
+      "name": "Emily Cluff",
+      "gender": "Female",
+      "birthdate": "2015-01-30"
+    }
+  ]
+}

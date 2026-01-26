@@ -26,3 +26,22 @@
   }
 }
 
+@media (min-width: 700px) {
+  /* Home page main content changes layout on larger screens */
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .spotlights {
+    grid-column: 1 / -1;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+}

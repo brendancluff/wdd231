@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to the Queen Creek Chamber of Commerce. Explore events, weather, and featured local businesses.">
+  <meta name="author" content="Brendan Cluff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Queen Creek Chamber of Commerce | Home</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Queen Creek Chamber of Commerce | Home">
+  <meta property="og:description" content="Community info, events, weather, and featured local businesses in Queen Creek.">
+  <meta property="og:image" content="images/og-image.webp">
+  <meta property="og:type" content="website">
+  <!-- Optional once published -->
+  <!-- <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO/chamber/index.html"> -->
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img
+        src="images/og-image.webp"
+        alt="Queen Creek Chamber logo"
+        class="logo"
+        width="44"
+        height="44"
+        loading="eager"
+        fetchpriority="high"
+      >
+      <div>
+        <p class="site-name">Queen Creek Chamber of Commerce</p>
+        <p class="site-tagline">Connecting Local Business</p>
+      </div>
+    </div>
+
+    <button id="menu" type="button" aria-label="Menu" aria-expanded="false"></button>
+
+    <nav id="primaryNav" class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Chamber hero section">
+      <!-- Replace hero.webp with your actual hero image file -->
+      <img
+        class="hero-img"
+        src="images/hero.webp"
+        alt="Queen Creek community and local businesses"
+        width="1200"
+        height="600"
+        loading="eager"
+        fetchpriority="high"
+      >
+      <div class="hero-overlay">
+        <h1>Grow with Queen Creek</h1>
+        <p>Networking • Resources • Local Events • Business Advocacy</p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- HOME GRID -->
+    <section class="home-grid" aria-label="Home content">
+      <!-- EVENTS -->
+      <section class="panel events" aria-label="Current events">
+        <h2>Current Events</h2>
+        <ul>
+          <li><strong>Business Breakfast</strong> — <span>Every Tuesday, 8:00 AM</span></li>
+          <li><strong>Small Business Workshop</strong> — <span>First Friday, 6:00 PM</span></li>
+          <li><strong>Community Market</strong> — <span>Saturday, 9:00 AM–1:00 PM</span></li>
+        </ul>
+        <p class="note">Update these events with real/fictitious chamber content.</p>
+      </section>
+
+      <!-- WEATHER -->
+      <section class="panel weather" aria-label="Local weather">
+        <h2>Weather</h2>
+
+        <div class="weather-now">
+          <p><strong>Now:</strong> <span id="tempNow">--</span>°F</p>
+          <p><strong>Conditions:</strong> <span id="conditions">Loading...</span></p>
+        </div>
+
+        <h3>3-Day Forecast</h3>
+        <ul class="forecast">
+          <li><span id="day1Label">Day 1</span>: <span id="day1Temp">--</span>°F</li>
+          <li><span id="day2Label">Day 2</span>: <span id="day2Temp">--</span>°F</li>
+          <li><span id="day3Label">Day 3</span>: <span id="day3Temp">--</span>°F</li>
+        </ul>
+
+        <p class="note">Data from OpenWeatherMap.</p>
+      </section>
+
+      <!-- SPOTLIGHTS -->
+      <section class="panel spotlights" aria-label="Member spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlightCards" class="spotlight-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p><strong>Queen Creek Chamber of Commerce</strong></p>
+      <p>Queen Creek, AZ</p>
+    </div>
+
+    <div>
+      <p>&copy; <span id="currentYear"></span> Brendan Cluff | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

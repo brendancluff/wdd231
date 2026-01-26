@@ -1,6 +1,32 @@
 @media (min-width: 700px) {
+  .site-header {
+    grid-template-columns: auto 1fr;
+  }
+
+  #menu {
+    display: none;
+  }
+
   .site-nav {
     display: flex;
-    gap: 1rem;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    grid-column: auto;
+    background: transparent;
+    padding: 0;
+  }
+
+  .site-nav a {
+    background: rgba(255, 255, 255, 0.14);
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: rgba(255, 255, 255, 0.28);
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
   }
 }

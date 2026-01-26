@@ -5,7 +5,7 @@
       "address": "123 Main St, Queen Creek, AZ",
       "phone": "(480) 555-1001",
       "website": "https://example.com",
-      "image": "qcts.png",
+      "image": "tech.webp",
       "membershipLevel": 3,
       "category": "IT Services"
     },
@@ -14,7 +14,7 @@
       "address": "45 Blossom Ave, Queen Creek, AZ",
       "phone": "(480) 555-1002",
       "website": "https://example.com",
-      "image": "desertbloom.png",
+      "image": "cafe.webp",
       "membershipLevel": 2,
       "category": "Restaurant"
     },
@@ -23,7 +23,7 @@
       "address": "800 Health Way, Queen Creek, AZ",
       "phone": "(480) 555-1003",
       "website": "https://example.com",
-      "image": "santanfitness.png",
+      "image": "fitness.webp",
       "membershipLevel": 1,
       "category": "Fitness"
     },
@@ -32,7 +32,7 @@
       "address": "77 Market St, Queen Creek, AZ",
       "phone": "(480) 555-1004",
       "website": "https://example.com",
-      "image": "copperstaterealty.png",
+      "image": "real.webp",
       "membershipLevel": 2,
       "category": "Real Estate"
     },
@@ -41,7 +41,7 @@
       "address": "19 Garage Rd, Queen Creek, AZ",
       "phone": "(480) 555-1005",
       "website": "https://example.com",
-      "image": "sunvalleyauto.png",
+      "image": "auto.webp",
       "membershipLevel": 1,
       "category": "Automotive"
     },
@@ -50,7 +50,7 @@
       "address": "310 Green Ln, Queen Creek, AZ",
       "phone": "(480) 555-1006",
       "website": "https://example.com",
-      "image": "cactushome.png",
+      "image": "home.webp",
       "membershipLevel": 3,
       "category": "Retail"
     },
@@ -59,7 +59,7 @@
       "address": "205 Ink Dr, Queen Creek, AZ",
       "phone": "(480) 555-1007",
       "website": "https://example.com",
-      "image": "evprint.png",
+      "image": "print.webp",
       "membershipLevel": 2,
       "category": "Marketing"
     }

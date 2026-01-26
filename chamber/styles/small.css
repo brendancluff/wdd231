@@ -1,34 +1,211 @@
+:root {
+  /* Contrast-safe palette */
+  --primary: #0f3550;       /* darker blue for stronger contrast */
+  --secondary: #f1f5f9;     /* light background */
+  --accent: #fbbf24;        /* lighter amber accent */
+  --text: #0b1320;          /* dark text */
+  --text-light: #ffffff;    /* light text on dark backgrounds */
+  --link-light: #e0f2ff;    /* light link color on dark backgrounds */
+  --card: #ffffff;
+}
+
 body {
   font-family: system-ui, Arial, sans-serif;
+  color: var(--text);
+  background: var(--secondary);
   margin: 0;
+  line-height: 1.4;
 }
 
+/* ---------- Header ---------- */
 .site-header {
-  background: #1f4d6b;
-  color: white;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--primary);
+  color: var(--text-light);
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.site-name {
+  margin: 0;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.site-tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.95;
+  color: var(--text-light);
+}
+
+/* ---------- Hamburger Button ---------- */
+#menu {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--text-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#menu::before { content: "☰"; }
+#menu.open::before { content: "✖"; }
+
+#menu:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Navigation ---------- */
 .site-nav {
   display: none;
+  grid-column: 1 / -1;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  padding: 0.5rem;
 }
 
 .site-nav.open {
-  display: block;
+  display: grid;
+  gap: 0.25rem;
 }
 
+.site-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12); /* keeps contrast strong */
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--text-light);
+}
+
+.site-nav a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Active page indicator */
+.site-nav a.active {
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--text-light);
+  text-decoration: underline;
+}
+
+/* ---------- Main ---------- */
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* ---------- Directory Controls (Buttons) ---------- */
+.directory-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.directory-controls button {
+  background-color: var(--primary);      /* dark background */
+  color: var(--text-light);             /* white text (fixes contrast) */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.directory-controls button:hover,
+.directory-controls button:focus {
+  background-color: #09283d;            /* darker hover */
+}
+
+.directory-controls button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Directory Layout ---------- */
 #members.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 #members.list {
-  display: block;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
 }
 
+/* Member Card */
 .member-card {
-  background: #f1f5f9;
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 14px;
   padding: 1rem;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+}
+
+.member-card a {
+  color: #0b4a6f;               /* readable link on white card */
+  word-break: break-word;
+}
+
+.member-card a:hover,
+.member-card a:focus {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  background: #081c2e;          /* very dark footer background */
+  color: var(--text-light);     /* white footer text */
+}
+
+.footer-contact p,
+.footer-dev p {
+  margin: 0.25rem 0;
+}
+
+.site-footer a {
+  color: var(--link-light);
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: var(--text-light);
 }

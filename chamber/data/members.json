@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Queen Creek Tech Solutions",
+      "address": "123 Main St, Queen Creek, AZ",
+      "phone": "(480) 555-1001",
+      "website": "https://example.com",
+      "image": "qcts.png",
+      "membershipLevel": 3,
+      "category": "IT Services"
+    },
+    {
+      "name": "Desert Bloom Café",
+      "address": "45 Blossom Ave, Queen Creek, AZ",
+      "phone": "(480) 555-1002",
+      "website": "https://example.com",
+      "image": "desertbloom.png",
+      "membershipLevel": 2,
+      "category": "Restaurant"
+    },
+    {
+      "name": "San Tan Fitness",
+      "address": "800 Health Way, Queen Creek, AZ",
+      "phone": "(480) 555-1003",
+      "website": "https://example.com",
+      "image": "santanfitness.png",
+      "membershipLevel": 1,
+      "category": "Fitness"
+    },
+    {
+      "name": "Copper State Realty",
+      "address": "77 Market St, Queen Creek, AZ",
+      "phone": "(480) 555-1004",
+      "website": "https://example.com",
+      "image": "copperstaterealty.png",
+      "membershipLevel": 2,
+      "category": "Real Estate"
+    },
+    {
+      "name": "Sun Valley Auto Care",
+      "address": "19 Garage Rd, Queen Creek, AZ",
+      "phone": "(480) 555-1005",
+      "website": "https://example.com",
+      "image": "sunvalleyauto.png",
+      "membershipLevel": 1,
+      "category": "Automotive"
+    },
+    {
+      "name": "Cactus Home & Garden",
+      "address": "310 Green Ln, Queen Creek, AZ",
+      "phone": "(480) 555-1006",
+      "website": "https://example.com",
+      "image": "cactushome.png",
+      "membershipLevel": 3,
+      "category": "Retail"
+    },
+    {
+      "name": "East Valley Print & Design",
+      "address": "205 Ink Dr, Queen Creek, AZ",
+      "phone": "(480) 555-1007",
+      "website": "https://example.com",
+      "image": "evprint.png",
+      "membershipLevel": 2,
+      "category": "Marketing"
+    }
+  ]
+}

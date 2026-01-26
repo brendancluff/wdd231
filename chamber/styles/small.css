@@ -1,11 +1,10 @@
 :root {
-  /* Contrast-safe palette */
-  --primary: #0f3550;       /* darker blue for stronger contrast */
-  --secondary: #f1f5f9;     /* light background */
-  --accent: #fbbf24;        /* lighter amber accent */
-  --text: #0b1320;          /* dark text */
-  --text-light: #ffffff;    /* light text on dark backgrounds */
-  --link-light: #e0f2ff;    /* light link color on dark backgrounds */
+  --primary: #0f3550;
+  --secondary: #f1f5f9;
+  --accent: #fbbf24;
+  --text: #0b1320;
+  --text-light: #ffffff;
+  --link-light: #e0f2ff;
   --card: #ffffff;
 }
 
@@ -94,7 +93,7 @@ body {
   text-decoration: none;
   padding: 0.6rem 0.75rem;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.12); /* keeps contrast strong */
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .site-nav a:hover,
@@ -108,7 +107,6 @@ body {
   outline-offset: 2px;
 }
 
-/* Active page indicator */
 .site-nav a.active {
   background: rgba(255, 255, 255, 0.35);
   color: var(--text-light);
@@ -116,15 +114,10 @@ body {
 }
 
 /* ---------- Main ---------- */
-main {
-  padding: 1rem;
-}
+main { padding: 1rem; }
+h1 { margin-top: 0; }
 
-h1 {
-  margin-top: 0;
-}
-
-/* ---------- Directory Controls (Buttons) ---------- */
+/* ---------- Directory Controls ---------- */
 .directory-controls {
   display: flex;
   gap: 0.5rem;
@@ -132,8 +125,8 @@ h1 {
 }
 
 .directory-controls button {
-  background-color: var(--primary);      /* dark background */
-  color: var(--text-light);             /* white text (fixes contrast) */
+  background-color: var(--primary);
+  color: var(--text-light);
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 0.55rem 0.85rem;
   border-radius: 10px;
@@ -142,7 +135,7 @@ h1 {
 
 .directory-controls button:hover,
 .directory-controls button:focus {
-  background-color: #09283d;            /* darker hover */
+  background-color: #09283d;
 }
 
 .directory-controls button:focus-visible {
@@ -163,22 +156,41 @@ h1 {
   grid-template-columns: 1fr;
 }
 
-/* Member Card */
+/* ---------- Member Cards ---------- */
 .member-card {
   background: var(--card);
   border: 1px solid rgba(0, 0, 0, 0.10);
   border-radius: 14px;
   padding: 1rem;
+
+  /* ✅ keeps card content from changing size unexpectedly */
+  display: grid;
+  gap: 0.35rem;
 }
+
+.member-card h2 {
+  margin: 0.25rem 0 0;
+  line-height: 1.2;
+
+  /* ✅ reserves space so cards don't shift when text wraps */
+  min-height: 2.4em; /* ~2 lines */
+}
+
 
 .member-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+
+  aspect-ratio: 3 / 2;   /* keep this */
+  display: block;
+
+  /* ✅ reinforces intrinsic size to reduce desktop CLS */
+  contain: size layout paint;
 }
 
+
 .member-card a {
-  color: #0b4a6f;               /* readable link on white card */
+  color: #0b4a6f;
   word-break: break-word;
 }
 
@@ -192,14 +204,11 @@ h1 {
   display: grid;
   gap: 1rem;
   padding: 1rem;
-  background: #081c2e;          /* very dark footer background */
-  color: var(--text-light);     /* white footer text */
+  background: #081c2e;
+  color: var(--text-light);
+  min-height: 120px;
 }
 
-.footer-contact p,
-.footer-dev p {
-  margin: 0.25rem 0;
-}
 
 .site-footer a {
   color: var(--link-light);
@@ -209,3 +218,4 @@ h1 {
 .site-footer a:focus {
   color: var(--text-light);
 }
+

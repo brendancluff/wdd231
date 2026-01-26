@@ -1,11 +1,11 @@
 @media (min-width: 700px) {
-  .site-header {
-    grid-template-columns: auto 1fr;
+  .member-card img {
+    max-width: 520px;
+    margin-inline: auto;
   }
 
-  #menu {
-    display: none;
-  }
+
+  #menu { display: none; }
 
   .site-nav {
     display: flex;
@@ -24,9 +24,5 @@
   .site-nav a:focus {
     background: rgba(255, 255, 255, 0.28);
   }
-
-  .site-footer {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
 }
+

@@ -13,8 +13,10 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Queen Creek Chamber of Commerce | Directory">
   <meta property="og:description" content="Explore local chamber member businesses in Queen Creek.">
-  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:image" content="images/og-image.webp">
   <meta property="og:type" content="website">
+  <!-- Optional but recommended once published -->
+  <!-- <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO/chamber/directory.html"> -->
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
@@ -26,46 +28,54 @@
 </head>
 
 <body>
-<header class="site-header">
-  <div class="brand">
-    <img src="images/og-image.webp" alt="Queen Creek Chamber logo" class="logo">
-    <div>
-      <p class="site-name">Queen Creek Chamber of Commerce</p>
-      <p class="site-tagline">Connecting Local Business</p>
+  <header class="site-header">
+    <div class="brand">
+      <img
+        src="images/og-image.webp"
+        alt="Queen Creek Chamber logo"
+        class="logo"
+        width="44"
+        height="44"
+        loading="eager"
+        fetchpriority="high"
+      >
+      <div>
+        <p class="site-name">Queen Creek Chamber of Commerce</p>
+        <p class="site-tagline">Connecting Local Business</p>
+      </div>
     </div>
-  </div>
 
-  <button id="menu" aria-label="Menu"></button>
+    <button id="menu" type="button" aria-label="Menu" aria-expanded="false"></button>
 
-  <nav id="primaryNav" class="site-nav">
-    <a href="#">Home</a>
-    <a href="#">Discover</a>
-    <a href="directory.html" class="active">Directory</a>
-    <a href="#">Join</a>
-  </nav>
-</header>
+    <nav id="primaryNav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
 
-<main>
-  <h1>Business Directory</h1>
+  <main>
+    <h1>Business Directory</h1>
 
-  <section class="directory-controls">
-    <button id="grid">Grid</button>
-    <button id="list">List</button>
-  </section>
+    <section class="directory-controls" aria-label="Directory view controls">
+      <button id="grid" type="button">Grid</button>
+      <button id="list" type="button">List</button>
+    </section>
 
-  <section id="members" class="grid"></section>
-</main>
+    <section id="members" class="grid" aria-label="Chamber members list"></section>
+  </main>
 
-<footer class="site-footer">
-  <div>
-    <p><strong>Queen Creek Chamber of Commerce</strong></p>
-    <p>Queen Creek, AZ</p>
-  </div>
+  <footer class="site-footer">
+    <div>
+      <p><strong>Queen Creek Chamber of Commerce</strong></p>
+      <p>Queen Creek, AZ</p>
+    </div>
 
-  <div>
-    <p>&copy; <span id="currentYear"></span> Brendan Cluff | WDD 231</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </div>
-</footer>
+    <div>
+      <p>&copy; <span id="currentYear"></span> Brendan Cluff | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
 </body>
 </html>

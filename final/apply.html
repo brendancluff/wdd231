@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Apply to the Dragon Riders Academy. Submit your form to view your submitted data on the action page.">
+  <meta name="author" content="Brendan Cluff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Riders Academy | Apply</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dragon Riders Academy | Apply">
+  <meta property="og:description" content="Apply to the Dragon Riders Academy. Submit your form to view your submitted data on the action page.">
+  <meta property="og:image" content="images/og-image.svg">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/favicon.svg" class="logo" alt="Dragon Riders Academy emblem" width="44" height="44" loading="eager" fetchpriority="high">
+        <div class="brand-text">
+          <strong>Dragon Riders Academy</strong>
+          <span>Train • Bond • Fly</span>
+        </div>
+      </div>
+
+      <button id="menu" type="button" aria-label="Menu" aria-expanded="false"></button>
+
+      <nav id="primaryNav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="roster.html">Roster</a>
+        <a href="apply.html" class="active">Apply</a>
+        <a href="attributions.html">Attributions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Application</h1>
+
+    <section class="panel">
+      <h2>Apply to Train</h2>
+      <p>Complete the form below. Submitting takes you to the action page that displays your submitted form data.</p>
+
+      <form id="applicationForm" method="get" action="apply-confirmation.html">
+        <label>Full name
+          <input name="fullName" type="text" required autocomplete="name">
+        </label>
+
+        <label>Email
+          <input name="email" type="email" required autocomplete="email">
+        </label>
+
+        <label>Age
+          <input name="age" type="number" min="13" max="99" required>
+        </label>
+
+        <label>Preferred element
+          <select name="element" required>
+            <option value="" selected disabled>Select one…</option>
+            <option>Fire</option><option>Storm</option><option>Frost</option><option>Earth</option><option>Shadow</option>
+          </select>
+        </label>
+
+        <label>Training track
+          <select name="track" required>
+            <option value="" selected disabled>Select one…</option>
+            <option>Scout</option><option>Guardian</option><option>Courier</option><option>Skyforge</option>
+          </select>
+        </label>
+
+        <label>Prior experience
+          <textarea name="experience" required placeholder="Tell us about any flight, rescue, animal handling, or leadership experience."></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="reset">Reset</button>
+          <button type="submit" class="primary">Submit Application</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel" style="margin-top:1rem">
+      <h2>Saved Preview (localStorage)</h2>
+      <div id="savedPreview"></div>
+      <p><small>Form edits are saved to localStorage while you work.</small></p>
+    </section>
+  </main>
+
+  <script type="module" src="scripts/apply.js"></script>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Dragon Riders Academy</strong>
+        <p>Sky Harbor Range • Training Grounds</p>
+        <small>For course assessment only — fictional academy.</small>
+      </div>
+      <div>
+        <p>&copy; <span id="currentYear"></span> Brendan Cluff | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="#" aria-label="Video demonstration link">Video Demo Link (add after recording)</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

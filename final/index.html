@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Train to become a certified dragon rider through safe bonding, flight, and rescue practice.">
+  <meta name="author" content="Brendan Cluff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Riders Academy | Home</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dragon Riders Academy | Home">
+  <meta property="og:description" content="Train to become a certified dragon rider through safe bonding, flight, and rescue practice.">
+  <meta property="og:image" content="images/og-image.svg">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/favicon.svg" class="logo" alt="Dragon Riders Academy emblem" width="44" height="44" loading="eager" fetchpriority="high">
+        <div class="brand-text">
+          <strong>Dragon Riders Academy</strong>
+          <span>Train • Bond • Fly</span>
+        </div>
+      </div>
+
+      <button id="menu" type="button" aria-label="Menu" aria-expanded="false"></button>
+
+      <nav id="primaryNav" class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="roster.html">Roster</a>
+        <a href="apply.html">Apply</a>
+        <a href="attributions.html">Attributions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Admissions hero">
+      <img src="images/hero.svg" alt="Stylized dragon in flight over the academy" width="1200" height="600" loading="eager" fetchpriority="high">
+      <div class="overlay">
+        <h1>Earn Your Wings</h1>
+        <p>Learn flight safety, rider ethics, and bonding skills—then graduate with an academy certification.</p>
+        <a class="cta" href="apply.html">Apply Now</a>
+      </div>
+    </section>
+
+    <section class="home-grid" aria-label="Home content grid">
+      <section class="panel">
+        <h2>Upcoming Training Events</h2>
+        <ul>
+          <li><strong>Orientation Flight</strong> — Mondays, 6:00 PM</li>
+          <li><strong>Bonding Workshop</strong> — Wednesdays, 5:30 PM</li>
+          <li><strong>Rescue Drill</strong> — Saturdays, 9:00 AM</li>
+        </ul>
+        <p>All sessions include safety briefings and supervised practice.</p>
+      </section>
+
+      <section class="panel">
+        <h2>What You’ll Learn</h2>
+        <p><strong>Safety-first:</strong> pre-flight checks, harness fitting, and emergency signals.</p>
+        <p><strong>Bonding:</strong> trust-building routines and temperament matching.</p>
+        <p><strong>Rescue:</strong> navigation, communication, and team leadership.</p>
+        <hr>
+        <p>Visit the <a href="roster.html">Roster</a> to explore 15 dragons generated from JSON data.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Dragon Riders Academy</strong>
+        <p>Sky Harbor Range • Training Grounds</p>
+        <small>For course assessment only — fictional academy.</small>
+      </div>
+      <div>
+        <p>&copy; <span id="currentYear"></span> Brendan Cluff | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="#" aria-label="Video demonstration link">Video Demo Link (add after recording)</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

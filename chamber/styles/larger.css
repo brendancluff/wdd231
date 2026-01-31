@@ -1,11 +1,14 @@
 @media (min-width: 700px) {
+  /* ===== Directory: images ===== */
   .member-card img {
     max-width: 520px;
     margin-inline: auto;
   }
 
-
-  #menu { display: none; }
+  /* ===== Header/Nav: large screen ===== */
+  #menu { 
+    display: none; 
+  }
 
   .site-nav {
     display: flex;
@@ -24,10 +27,8 @@
   .site-nav a:focus {
     background: rgba(255, 255, 255, 0.28);
   }
-}
 
-@media (min-width: 700px) {
-  /* Home page main content changes layout on larger screens */
+  /* ===== Home page: main layout ===== */
   .home-grid {
     grid-template-columns: 1fr 1fr;
     align-items: start;
@@ -43,5 +44,16 @@
 
   .hero-overlay h1 {
     font-size: 2rem;
+  }
+
+  /* ===== Join page: form + cards side-by-side ===== */
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .membership-cards {
+    position: sticky;
+    top: 1rem;
   }
 }

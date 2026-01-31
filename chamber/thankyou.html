@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Thank you for joining the Queen Creek Chamber of Commerce.">
+  <meta name="author" content="Brendan Cluff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Queen Creek Chamber of Commerce | Thank You</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img
+      src="images/og-image.webp"
+      alt="Queen Creek Chamber logo"
+      class="logo"
+      width="44"
+      height="44"
+      loading="eager"
+    >
+    <div>
+      <p class="site-name">Queen Creek Chamber of Commerce</p>
+      <p class="site-tagline">Connecting Local Business</p>
+    </div>
+  </div>
+
+  <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+
+  <nav id="primaryNav" class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html" class="active">Join</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Thank You!</h1>
+
+  <section class="panel">
+    <p>Thanks for submitting your membership application. Here is the information we received:</p>
+
+    <div class="form-summary" id="formSummary" aria-live="polite"></div>
+
+    <p style="margin-top:1rem;">
+      <a href="join.html">Back to Join Page</a>
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <p><strong>Queen Creek Chamber of Commerce</strong></p>
+    <p>Queen Creek, AZ</p>
+  </div>
+
+  <div>
+    <p>&copy; <span id="currentYear"></span> Brendan Cluff | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </div>
+</footer>
+</body>
+</html>

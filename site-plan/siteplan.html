@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Individual Project Site Plan for WDD231 Final Project" />
+  <meta name="author" content="Your Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Site Plan | Dragon Rider Academy</title>
+
+  <!-- Typography (single, non-duplicate import) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/site-plan.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Individual Project Site Plan</h1>
+      <p class="subtitle">WDD231 Final Project Planning Document</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Site Name -->
+    <section id="site-name" class="card">
+      <h2>Site Name</h2>
+      <p><strong>Dragon Rider Academy</strong></p>
+      <p>
+        This name clearly communicates the theme and purpose: a training academy for riders to learn dragon care,
+        flight basics, safety, and team bonding. It is memorable, direct, and fits a fantasy academy brand.
+      </p>
+      <p><strong>Optional domain idea:</strong> dragonrideracademy.org (availability not required for class)</p>
+    </section>
+
+    <!-- Site Purpose -->
+    <section id="site-purpose" class="card">
+      <h2>Site Purpose</h2>
+      <p>
+        The Dragon Rider Academy website serves as a hub for future riders to explore programs, meet dragon breeds,
+        review training schedules, and apply for enrollment. The site will include a dynamically generated directory of
+        dragons and/or courses using JSON + Fetch, support user preferences with localStorage (such as favorite dragons or
+        preferred training track), and offer an application/contact form.
+      </p>
+      <ul>
+        <li>Learn about the academy, tracks, rules, and safety standards.</li>
+        <li>Browse a directory of dragons and/or training courses with filters.</li>
+        <li>Open a modal dialog to view detailed dragon or course information.</li>
+        <li>Save favorites or settings (localStorage) to persist preferences.</li>
+        <li>Submit an enrollment inquiry form and view the submitted data on an action page.</li>
+      </ul>
+    </section>
+
+    <!-- Scenarios -->
+    <section id="scenarios" class="card">
+      <h2>Scenarios</h2>
+      <p>These are questions a typical visitor might ask:</p>
+      <ul>
+        <li>“Which dragon breed is best for beginner riders and calmer flight training?”</li>
+        <li>“What training tracks does the academy offer, and what are the prerequisites?”</li>
+        <li>“Can I save a shortlist of dragons or courses I’m interested in so I can compare later?”</li>
+      </ul>
+    </section>
+
+    <!-- Color Scheme -->
+    <section id="color-scheme" class="card">
+      <h2>Color Scheme</h2>
+      <p>
+        Based on standard color palette guidance, we selected a dominant primary color and two complementary accent colors,
+        plus a planned background and text color. Each color has a specific role to support accessibility, readability, and
+        brand recognition.
+      </p>
+
+      <div class="swatches">
+        <div class="swatch">
+          <div class="chip chip-primary" aria-hidden="true"></div>
+          <div>
+            <p><strong>Primary:</strong> #0F172A (Dragon Night Blue)</p>
+            <p>Main color used for headings, header background, and strong UI emphasis.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="chip chip-accent1" aria-hidden="true"></div>
+          <div>
+            <p><strong>Accent 1:</strong> #F97316 (Ember Orange)</p>
+            <p>Used for buttons, links, and text highlights to attract attention and contrast with primary color.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="chip chip-accent2" aria-hidden="true"></div>
+          <div>
+            <p><strong>Accent 2:</strong> #4E9F3D (Emerald Green)</p>
+            <p>Used sparingly for secondary UI elements and contrast (e.g., success states or badges).</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="chip chip-bg" aria-hidden="true"></div>
+          <div>
+            <p><strong>Background:</strong> #F8FAFC (Cloud Mist)</p>
+            <p>Used for the body background to support readability and avoid eye strain.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="chip chip-text" aria-hidden="true"></div>
+          <div>
+            <p><strong>Text:</strong> #24292E (Dark Charcoal)</p>
+            <p>Used for main body text; softer than pure black for more comfortable reading on screens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section id="typography" class="card">
+      <h2>Typography</h2>
+      <p>
+        Based on best practices for web fonts, we selected fonts that combine readability with fantasy-style personality.
+        These fonts come from Google Fonts, ensuring wide support and consistent rendering.
+      </p>
+      <ul>
+        <li><strong>Heading font:</strong> <em>Cormorant Garamond</em> — elegant and thematic, used for H1/H2 elements to give a classic “academy” feel.</li>
+        <li><strong>Body font:</strong> <em>Inter</em> — highly readable sans-serif used for paragraphs, captions, and UI text.</li>
+      </ul>
+      <p class="type-sample">
+        <span class="type-h">Heading Example — Dragon Rider Academy</span><br>
+        <span class="type-b">Body Example — Explore courses, dragon breeds, and begin your training today.</span>
+      </p>
+    </section>
+
+    <!-- Wireframes -->
+    <section id="wireframes" class="card">
+      <h2>Wireframe</h2>
+      <p>
+        Wireframes below represent the <strong>Home Page</strong> layout for mobile and larger screens.
+        Boxes indicate sections/relationships (not final design).
+      </p>
+
+      <h3>Mobile View (320px+)</h3>
+      <pre class="wireframe" aria-label="Mobile wireframe">
++----------------------------------+
+| Header / Academy Crest           |
+| [Hamburger]                      |
++----------------------------------+
+| Hero Title: Dragon Rider Academy |
+| Short intro / tagline            |
+| [Apply Now CTA]                  |
++----------------------------------+
+| Featured Dragons / Tracks        |
+| [Card]                           |
+| [Card]                           |
+| [Card]                           |
++----------------------------------+
+| Quick Filters (breed/track)      |
++----------------------------------+
+| Enrollment Form Teaser           |
+| [Name] [Email] [Track] [Submit]  |
++----------------------------------+
+| Footer (Attributions link)       |
++----------------------------------+
+      </pre>
+
+      <h3>Desktop/Tablet View (768px+)</h3>
+      <pre class="wireframe" aria-label="Desktop wireframe">
++------------------------------------------------------------------+
+| Header: Crest | Nav (Home | Dragons | Programs | Enroll/Contact) |
++------------------------------------------------------------------+
+| Hero: Title + Text + CTA                 | Hero Image/Illustration|
++------------------------------------------------------------------+
+| Highlights (3 cards in a row)                                        |
+| [Dragon Breeds]        [Training Tracks]        [Safety & Rules]      |
++------------------------------------------------------------------+
+| Filters/Search (left)                    | Featured Dragon (right)    |
++------------------------------------------------------------------+
+| Footer: Attributions | Social | Copyright                           |
++------------------------------------------------------------------+
+      </pre>
+    </section>
+
+    <!-- Planned Pages -->
+    <section id="pages" class="card">
+      <h2>Planned Pages (3 total)</h2>
+      <ol>
+        <li><strong>Home (index.html):</strong> hero, academy overview, highlights, and entry points.</li>
+        <li>
+          <strong>Dragons (dragons.html):</strong> fetch JSON to display 15+ dragons (or courses), show 4+ properties
+          per item, filter/search, modal details, save favorites (localStorage).
+        </li>
+        <li><strong>Enroll/Contact (enroll.html):</strong> enrollment info, prerequisites, and an inquiry/application form (posts to action page).</li>
+      </ol>
+      <p class="note">
+        <strong>Extra pages (not counted toward the 3):</strong> form action page (e.g., form-response.html) and
+        an attributions page (if external content is used).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Your Name • Site Plan Document
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

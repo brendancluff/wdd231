@@ -1,0 +1,163 @@
+/* site-plan.css */
+/* Color Scheme:
+   Primary:    #0F172A (Midnight Navy)
+   Accent 1:   #F97316 (Ember Orange)
+   Accent 2:   #4E9F3D (Emerald Green)
+   Background: #F8FAFC (Cloud Mist)
+   Text:       #24292E (Charcoal)
+*/
+
+:root {
+  --primary: #0F172A;
+  --accent: #F97316;   /* used for links */
+  --accent2: #4E9F3D;
+  --bg: #F8FAFC;
+
+  --text: #24292E;
+  --card: #FFFFFF;
+  --muted: #475569;
+  --border: #E2E8F0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Typography (as planned) */
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Layout */
+.container {
+  width: min(960px, 92%);
+  margin: 0 auto;
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #e5e7eb;
+  font-weight: 400;
+}
+
+main {
+  padding: 1.25rem 0 2rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+
+/* Optional: visible focus for accessibility */
+a:focus-visible {
+  outline: 3px solid var(--accent2);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.note {
+  color: var(--muted);
+}
+
+/* Swatches */
+.swatches {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.swatch {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.chip {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.chip-primary { background: var(--primary); border-color: #0b1220; }
+.chip-accent1 { background: var(--accent); border-color: #fb923c; }
+.chip-accent2 { background: var(--accent2); border-color: #3f8a31; }
+.chip-bg      { background: var(--bg); }
+.chip-text    { background: var(--text); border-color: #111827; }
+
+/* Typography sample box */
+.type-sample {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.type-h {
+  font-weight: 700;
+}
+
+.type-b {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* Wireframe block */
+.wireframe {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+  color: var(--muted);
+  background: #fff;
+}
+
+

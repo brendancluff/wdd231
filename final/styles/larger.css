@@ -1,8 +1,0 @@
-@media (min-width: 760px){
-  .site-nav{display:flex;gap:.5rem;padding:0;justify-content:flex-end}
-  .site-nav a{display:inline-block}
-  #menu{display:none}
-  .header-inner{grid-template-columns:auto 1fr}
-  .home-grid{grid-template-columns:1fr 1fr}
-  .footer-inner{grid-template-columns:1fr 1fr;align-items:start}
-}

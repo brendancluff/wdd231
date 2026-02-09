@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover our area: local highlights, demographics, and visitor info.">
+  <title>Discover | Chamber</title>
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <link rel="stylesheet" href="styles/discover.css">
+
+  <!-- Module script so we can import .mjs data -->
+  <script type="module" src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+  </header>
+
+  <button id="menu" aria-label="Menu"></button>
+  <nav class="site-nav">
+    <!-- ...your existing nav links... -->
+  </nav>
+
+  <main class="discover">
+    <h1>Discover</h1>
+
+    <!-- Visit message (required by assignment) -->
+    <p id="visitMessage" class="visit-message" aria-live="polite"></p>
+
+    <!-- Optional: demographics/facts block (recommended by assignment overview) -->
+    <section class="panel discover-facts">
+      <h2>Area Snapshot</h2>
+      <ul>
+        <li><strong>Population:</strong> 82,500,003</li>
+        <li><strong>Median income:</strong> 120,000</li>
+        <li><strong>Top industries:</strong> Soda, Coffee, Electronics</li>
+      </ul>
+    </section>
+
+    <!-- Cards grid -->
+    <section id="discoverGrid" class="discover-grid">
+      <!-- Cards injected by JS -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <!-- ...your existing footer... -->
+  </footer>
+</body>
+</html>

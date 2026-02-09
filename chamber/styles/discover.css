@@ -1,0 +1,133 @@
+/* ===============================
+   Discover Page Styles
+   Uses grid-template-areas (MDN)
+   =============================== */
+
+.visit-message {
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Optional snapshot panel spacing */
+.discover-facts {
+  margin: 0 0 1rem;
+}
+
+/* GRID CONTAINER */
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+
+  /* SMALL (320–640): stacked */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a1"
+    "a2"
+    "a3"
+    "a4"
+    "a5"
+    "a6"
+    "a7"
+    "a8";
+}
+
+/* Card matches your member-card style */
+.discover-card {
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 14px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.discover-card h2 {
+  margin: 0.25rem 0 0;
+  line-height: 1.2;
+}
+
+.discover-card figure {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.discover-card address {
+  font-style: normal;
+  opacity: 0.95;
+}
+
+.discover-card button {
+  justify-self: start;
+  background: var(--accent);
+  border: 0;
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.discover-card button:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Map each card to a named area */
+.area-1 { grid-area: a1; }
+.area-2 { grid-area: a2; }
+.area-3 { grid-area: a3; }
+.area-4 { grid-area: a4; }
+.area-5 { grid-area: a5; }
+.area-6 { grid-area: a6; }
+.area-7 { grid-area: a7; }
+.area-8 { grid-area: a8; }
+
+/* ===============================
+   MEDIUM (641–1024): distinct layout using areas
+   =============================== */
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a1 a1 a2"
+      "a3 a4 a2"
+      "a5 a6 a6"
+      "a7 a8 a8";
+  }
+
+  /* Hover effect ONLY on non-mobile */
+  .discover-card img {
+    transition: transform 160ms ease, filter 160ms ease, box-shadow 160ms ease;
+  }
+
+  .discover-card img:hover {
+    transform: scale(1.03);
+    filter: contrast(1.05) saturate(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+  }
+}
+
+/* ===============================
+   LARGE (1025+): different “magazine” map
+   =============================== */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a1 a1 a2 a3"
+      "a1 a1 a2 a4"
+      "a5 a6 a6 a4"
+      "a7 a7 a8 a8";
+  }
+}
+

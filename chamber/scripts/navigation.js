@@ -1,10 +1,19 @@
 const menuButton = document.querySelector("#menu");
 const nav = document.querySelector("#primaryNav");
 
-menuButton.addEventListener("click", () => {
-  menuButton.classList.toggle("open");
-  nav.classList.toggle("open");
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuButton.classList.toggle("open", isOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  });
 
-  const isOpen = nav.classList.contains("open");
-  menuButton.setAttribute("aria-expanded", isOpen);
-});
+  // Active link indicator
+  const current = window.location.pathname.split("/").pop() || "index.html";
+  nav.querySelectorAll("a").forEach((link) => {
+    if (link.getAttribute("href") === current) {
+      link.classList.add("active");
+    }
+  });
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragon Rider Academy | Train With Dragons</title>
+  <meta name="description" content="Explore Dragon Rider Academy programs, meet dragon breeds, review training tracks, and submit an enrollment inquiry.">
+  <meta name="author" content="Brendan Cluff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dragon Rider Academy | Train With Dragons">
+  <meta property="og:description" content="Explore tracks, meet dragon breeds, and begin your training.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-academy.svg">
+  <meta property="og:url" content="index.html">
+
+  <!-- Typography (site plan) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <a class="brand__link" href="index.html" aria-label="Dragon Rider Academy home">
+          <img src="images/logo-dragon.svg" alt="Dragon Rider Academy crest" width="44" height="44" loading="lazy">
+          <span class="brand__text">
+            <span class="brand__name">Dragon Rider Academy</span>
+            <span class="brand__tagline">Train • Bond • Fly</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav__toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a class="nav__link" href="index.html" data-nav="home">Home</a></li>
+          <li><a class="nav__link" href="dragons.html" data-nav="dragons">Dragons</a></li>
+          <li><a class="nav__link" href="enroll.html" data-nav="enroll">Enroll</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero card">
+      <div class="hero__content">
+        <h1>Dragon Rider Academy</h1>
+        <p class="muted">
+          A safety-first academy where future riders learn dragon care, bonding rituals, navigation, and flight fundamentals.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="enroll.html">Apply / Enroll</a>
+          <a class="btn btn--outline" href="dragons.html">Browse Dragons</a>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <img src="images/hero-academy.svg" alt="Illustration of a dragon and rider above mountains" width="640" height="420" loading="lazy">
+      </div>
+    </section>
+
+    <section class="card-grid" aria-label="Highlights">
+      <article class="card">
+        <h2>Dragon Breeds</h2>
+        <p class="muted">Compare dragon characteristics and find the best match for your experience level.</p>
+        <ul class="list-check">
+          <li>15+ breeds in a directory</li>
+          <li>Filter and search</li>
+          <li>Modal detail view</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Training Tracks</h2>
+        <p class="muted">Choose a track and start building skills with clear prerequisites.</p>
+        <ul class="list-check">
+          <li>Bonding & Care</li>
+          <li>Flight Fundamentals</li>
+          <li>Navigation & Weather</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Safety & Rules</h2>
+        <p class="muted">We prioritize rider safety and dragon welfare with clear standards.</p>
+        <ul class="list-check">
+          <li>Pre-flight checklists</li>
+          <li>Welfare-first training</li>
+          <li>Small cohort instruction</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" aria-label="Quick filters and featured dragons" style="margin-top:1rem">
+      <h2>Featured Dragons</h2>
+      <p class="muted">Loaded from our JSON directory using Fetch API (with try/catch).</p>
+      <div id="featured" aria-live="polite" style="display:grid; gap:0.75rem; margin-top:0.75rem"></div>
+      <p class="small muted">Visit the Dragons page to filter and save favorites.</p>
+    </section>
+
+    <section class="card" aria-label="Enrollment teaser" style="margin-top:1rem">
+      <h2>Start Your Enrollment</h2>
+      <p class="muted">Submit an inquiry in under two minutes. We display your submission on the action page.</p>
+      <a class="btn" href="enroll.html">Go to Enrollment Form</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Brendan Cluff • Dragon Rider Academy • <a href="attributions.html">Attributions</a></p>
+    <p class="small muted">Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

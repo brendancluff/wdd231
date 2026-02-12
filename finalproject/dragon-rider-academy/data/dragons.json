@@ -1,0 +1,156 @@
+{
+  "academy": "Dragon Rider Academy",
+  "version": "1.0",
+  "dragons": [
+    {
+      "id": 1,
+      "name": "Emberwing",
+      "species": "Fire Drake",
+      "temperament": "bold",
+      "wingspan_m": 14.2,
+      "top_speed_kmh": 128,
+      "specialty": "Thermal dives",
+      "rider_level": "Intermediate"
+    },
+    {
+      "id": 2,
+      "name": "Frostveil",
+      "species": "Ice Wyvern",
+      "temperament": "calm",
+      "wingspan_m": 15.1,
+      "top_speed_kmh": 112,
+      "specialty": "Cloud carving",
+      "rider_level": "Beginner"
+    },
+    {
+      "id": 3,
+      "name": "Stormspear",
+      "species": "Tempest Serpent",
+      "temperament": "curious",
+      "wingspan_m": 12.8,
+      "top_speed_kmh": 141,
+      "specialty": "Wind reads",
+      "rider_level": "Advanced"
+    },
+    {
+      "id": 4,
+      "name": "Mossback",
+      "species": "Forest Warden",
+      "temperament": "calm",
+      "wingspan_m": 13.0,
+      "top_speed_kmh": 98,
+      "specialty": "Stealth landings",
+      "rider_level": "Beginner"
+    },
+    {
+      "id": 5,
+      "name": "Cinderwhirl",
+      "species": "Ash Glider",
+      "temperament": "bold",
+      "wingspan_m": 11.9,
+      "top_speed_kmh": 152,
+      "specialty": "Spiral climbs",
+      "rider_level": "Intermediate"
+    },
+    {
+      "id": 6,
+      "name": "Auroraflare",
+      "species": "Sky Prism",
+      "temperament": "curious",
+      "wingspan_m": 16.4,
+      "top_speed_kmh": 120,
+      "specialty": "Night navigation",
+      "rider_level": "Advanced"
+    },
+    {
+      "id": 7,
+      "name": "Brinecrest",
+      "species": "Sea Raptor",
+      "temperament": "cautious",
+      "wingspan_m": 13.7,
+      "top_speed_kmh": 110,
+      "specialty": "Coastal routing",
+      "rider_level": "Beginner"
+    },
+    {
+      "id": 8,
+      "name": "Obsidian Pike",
+      "species": "Mountain Claw",
+      "temperament": "cautious",
+      "wingspan_m": 15.8,
+      "top_speed_kmh": 104,
+      "specialty": "Ridge soaring",
+      "rider_level": "Intermediate"
+    },
+    {
+      "id": 9,
+      "name": "Sunscale",
+      "species": "Dawn Charger",
+      "temperament": "bold",
+      "wingspan_m": 12.4,
+      "top_speed_kmh": 146,
+      "specialty": "Sprint bursts",
+      "rider_level": "Intermediate"
+    },
+    {
+      "id": 10,
+      "name": "Whispercoil",
+      "species": "Mist Naga",
+      "temperament": "calm",
+      "wingspan_m": 10.6,
+      "top_speed_kmh": 102,
+      "specialty": "Low-visibility flight",
+      "rider_level": "Beginner"
+    },
+    {
+      "id": 11,
+      "name": "Ironbloom",
+      "species": "Plate Basilisk",
+      "temperament": "cautious",
+      "wingspan_m": 14.9,
+      "top_speed_kmh": 108,
+      "specialty": "Stability training",
+      "rider_level": "Beginner"
+    },
+    {
+      "id": 12,
+      "name": "Glimmerjaw",
+      "species": "Crystal Drake",
+      "temperament": "curious",
+      "wingspan_m": 13.3,
+      "top_speed_kmh": 119,
+      "specialty": "Precision turns",
+      "rider_level": "Intermediate"
+    },
+    {
+      "id": 13,
+      "name": "Thundertail",
+      "species": "Storm Wyvern",
+      "temperament": "bold",
+      "wingspan_m": 16.0,
+      "top_speed_kmh": 158,
+      "specialty": "Formation lead",
+      "rider_level": "Advanced"
+    },
+    {
+      "id": 14,
+      "name": "Sable Drift",
+      "species": "Shadow Glider",
+      "temperament": "calm",
+      "wingspan_m": 12.1,
+      "top_speed_kmh": 115,
+      "specialty": "Silent approach",
+      "rider_level": "Intermediate"
+    },
+    {
+      "id": 15,
+      "name": "Copper Gale",
+      "species": "Windrunner",
+      "temperament": "curious",
+      "wingspan_m": 14.0,
+      "top_speed_kmh": 134,
+      "specialty": "Crosswind handling",
+      "rider_level": "Advanced"
+    }
+  ]
+}

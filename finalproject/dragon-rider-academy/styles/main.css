@@ -167,7 +167,7 @@ main {
 
 .nav__link.is-active {
   background: var(--accent);
-  color: #fff;
+  color: var(--primary); 
 }
 
 @media (min-width: 768px) {
@@ -217,13 +217,17 @@ main {
   border-radius: 10px;
   border: none;
   background: var(--accent);
-  color: #fff;
+  color: var(--primary); 
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
 }
 
-.btn:hover { background: #ea580c; }
+
+.btn:hover { 
+  background: #ea580c;
+  color: var(--primary);
+}
 
 .btn--outline {
   background: transparent;
